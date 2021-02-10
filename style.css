@@ -62,11 +62,14 @@
 
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
-    transition: 3s;
 }
 
 .ex-6-img:hover {
   filter: grayscale(100%);
+}
+
+.ex-7-img, .ex-8-img{
+  transition: 3s;
 }
 
 .ex-7-img:hover {
@@ -91,11 +94,8 @@
 }
 .ex-10-icon {
     font-size: 60px;
-    transition: 5s;
-}
 
-.ex-10-icon {
-  animation: run 3s infinite;
+    animation: run 3s infinite;
 }
 
 @keyframes run {
@@ -103,6 +103,21 @@
 }
 .ex-11-icon {
     font-size: 60px;
+}
+
+.ex-11-icon:hover {
+  animation: runthreequarters 1s linear;
+}
+@keyframes runthreequarters {
+  0% {
+    transform: rotate(0);
+  }
+  80% {
+    transform: rotate(280deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
