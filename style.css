@@ -109,9 +109,7 @@
   animation: runthreequarters 1s linear;
 }
 @keyframes runthreequarters {
-  0% {
-    transform: rotate(0);
-  }
+
   80% {
     transform: rotate(280deg);
   }
@@ -147,4 +145,87 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: top-white ;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes top-white {
+  50% {
+    left: calc(100% - 60px);
+  }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: bottom-white;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes bottom-white {
+  50% {
+    right: calc(100% - 60px);
+  }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+  animation-name: top-white-360°;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes top-white-360° {
+  25% {
+    left: calc(100% - 30px);
+    top: -10px;
+
+  40% {
+    left: calc(100% - 30px);
+    top: 100%;
+  }
+  65% {
+    left: 0;
+    top: 100%;
+  }
+  80% {
+    left: -25px;
+    top: -10px;
+  }
+  100% {
+    left: 10%;
+    top: -10px;
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-name: bottom-white-360°;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes  bottom-white-360°{
+
+  25% {
+    right: calc(100% - 30px);
+    bottom:-10px;
+  }
+  40% {
+    right: calc(100% - 30px);
+    bottom:100%;
+  }
+  65% {
+    right: 0;
+    bottom: 100%;
+  }
+  80% {
+    right: -25px;
+    bottom: -10px;
+  }
+  100% {
+    right: 10%;
+    bottom: -10px;
+  }
 }
